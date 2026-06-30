@@ -1,0 +1,39 @@
+{
+  "Black": [
+    "White",
+    "Grey",
+    "Beige",
+    "Camel",
+    "Olive"
+  ],
+
+  "White": [
+    "Black",
+    "Navy Blue",
+    "Grey",
+    "Brown",
+    "Blue"
+  ],
+
+  "Navy Blue": [
+    "White",
+    "Beige",
+    "Grey",
+    "Khaki",
+    "Brown"
+  ],
+
+  "Beige": [
+    "White",
+    "Navy Blue",
+    "Black",
+    "Olive"
+  ],
+
+  "Grey": [
+    "Black",
+    "White",
+    "Navy Blue",
+    "Burgundy"
+  ]
+}
