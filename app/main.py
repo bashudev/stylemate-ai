@@ -1,3 +1,4 @@
+from services.color_extractor import get_average_color
 import streamlit as st
 from PIL import Image
 
@@ -35,7 +36,12 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
+    average_color = get_average_color(image)
 
-    st.image(image, caption="Uploaded Garment", use_container_width=True)
+    st.write("### Average RGB Colour")
+
+    st.json(average_color)
+
+    st.image(image, caption="Uploaded Garment", use_container_width="stretch")
 
     st.success("✅ Garment uploaded successfully!")
