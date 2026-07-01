@@ -1,0 +1,34 @@
+{
+  "Shirt": {
+    "matches_with": [
+      "Chinos",
+      "Jeans",
+      "Formal Trousers"
+    ]
+  },
+
+  "T-Shirt": {
+    "matches_with": [
+      "Jeans",
+      "Joggers",
+      "Shorts",
+      "Cargo Pants"
+    ]
+  },
+
+  "Kurti": {
+    "matches_with": [
+      "Leggings",
+      "Palazzo",
+      "Jeans"
+    ]
+  },
+
+  "Saree": {
+    "matches_with": [
+      "Blouse",
+      "Heels",
+      "Clutch"
+    ]
+  }
+}
