@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 
 from services.garment_detector import detect_garment
+from services.fashion_engine import get_recommendations
 
 
 st.set_page_config(
@@ -26,6 +27,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
 
     garment = detect_garment(image)
+    recommendations = get_recommendations(garment)
 
     st.image(image, caption="Uploaded Garment", use_container_width=True)
     st.subheader("👔 Fashion Analysis")
@@ -39,6 +41,26 @@ if uploaded_file is not None:
     st.write(f"**Season:** {', '.join(garment['season']) if garment['season'] else 'Unknown'}")
     st.write(f"**Occasion:** {', '.join(garment['occasion']) if garment['occasion'] else 'Unknown'}")
     st.write(f"**Confidence:** {garment['confidence']:.0%}")
+    st.markdown("---")
+
+    st.subheader("👖 Recommended Bottoms")
+
+    for item in recommendations["bottoms"]:
+        st.write(f"✅ {item}")
+
+    st.subheader("👞 Recommended Footwear")
+
+    for item in recommendations["footwear"]:
+        st.write(f"✅ {item}")
+
+    st.subheader("⌚ Recommended Accessories")
+
+    for item in recommendations["accessories"]:
+        st.write(f"✅ {item}")
+
+    st.subheader("💡 Why these recommendations?")
+
+    st.info(recommendations["reason"])
 
 
 

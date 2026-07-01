@@ -1,27 +1,35 @@
-# StyleMate AI
+# StyleMate AI Roadmap
 
-## Vision
-An AI-powered fashion assistant for Indian shoppers.
+## Phase 1 - Foundation ✅
+- GitHub Repository
+- Streamlit Application
+- Image Upload
+- Fashion Profile
+- Project Structure
 
-## Mission
-Help shoppers build stylish, coordinated outfits using AI.
+## Phase 2 - AI Vision
+- Garment Recognition
+- Colour Detection
+- Pattern Detection
+- Fabric Detection
 
-## Phase 1
-- Upload image
-- Display image
-- Detect garment
-- Detect colors
+## Phase 3 - Fashion Intelligence
+- Outfit Recommendation
+- Colour Harmony
+- Occasion Detection
+- Seasonal Suggestions
 
-## Phase 2
-- Recommendation engine
-- Fashion rules
-- Color harmony
+## Phase 4 - Trend Intelligence
+- Current Fashion Trends
+- Trending Colours
+- Trending Garments
 
-## Phase 3
-- Trend engine
-- Shopping engine
+## Phase 5 - Shopping Assistant
+- Find Similar Products
+- Compare Prices
+- Suggest Accessories
 
-## Phase 4
-- Explainable AI
-- Personal wardrobe
-- Outfit scoring
+## Phase 6 - Personal Stylist
+- Complete Outfit Creation
+- Style Explanation
+- Wardrobe Assistant

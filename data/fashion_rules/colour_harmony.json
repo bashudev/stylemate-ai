@@ -1,0 +1,29 @@
+{
+  "White": {
+    "best_matches": [
+      "Navy Blue",
+      "Black",
+      "Grey",
+      "Beige",
+      "Olive Green"
+    ]
+  },
+
+  "Black": {
+    "best_matches": [
+      "Grey",
+      "White",
+      "Beige",
+      "Olive Green"
+    ]
+  },
+
+  "Blue": {
+    "best_matches": [
+      "White",
+      "Grey",
+      "Khaki",
+      "Beige"
+    ]
+  }
+}

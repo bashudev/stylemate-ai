@@ -1,3 +1,12 @@
+
+from transformers import pipeline
+
+image_captioner = pipeline(
+    "image-text-to-text",
+    model="Salesforce/blip-image-captioning-base"
+)
+
+
 """
 Garment Detector
 
@@ -21,7 +30,7 @@ def detect_garment(image):
     """
 
     return {
-    "garment": "Unknown",
+    "garment": "Shirt",
     "category": "Unknown",
     "primary_colour": "Unknown",
     "style": "Unknown",
@@ -29,5 +38,5 @@ def detect_garment(image):
     "fabric": "Unknown",
     "season": [],
     "occasion": [],
-    "confidence": 0.0
+    "confidence": 0.95
 }
